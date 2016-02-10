@@ -26,7 +26,7 @@ The script is written to take the least amount of time. Most applications are fo
 For my purposes most of the name arrays filter into a single 'apppaths' array, however you could keep them separate by naming the output arrays differently. The reason you would do this is mentioned in the next section.
 
 #### 3. Configuration using dockutil 
-The third section is made up of dockutil commands in for loops that iterate through the path arrays and add/remove apps in the dock based on the options provided by dockutil. 
+The third section is made up of dockutil commands in for loops that iterate through the path arrays and add/remove apps in the dock based on the options provided by dockutil. --no-restart is recommended on all commands as the script kills the dock later on anyway after a small delay.
 
 Since I wrote this script for an enterprise environment, the first thing it does is checks to see if you are logged in as a certain admin account, as the techs need different applications in the dock than the user(s) of the machine.
 
