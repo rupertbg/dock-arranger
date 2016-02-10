@@ -5,8 +5,9 @@ Written as a run-once. Leaves .userconfig in the users home to prevent the scrip
 
 ### Requirements
 
-dockutil (https://github.com/kcrawford/dockutil) must be located in /usr/local/ or variable in script edited to suit
-OS X 10.11+ (Probably works on older version but haven't tested)
+- dockutil (https://github.com/kcrawford/dockutil) must be located in /usr/local/ or variable in script edited to suit
+
+- OS X 10.11+ (Probably works on older version but haven't tested)
 
 ### Options
 
