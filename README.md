@@ -19,6 +19,8 @@ The first section is made up of arrays which you can use to input names of apps 
 #### 2. Application searching
 The second section is made up of find commands in for loops that iterate through the arrays of names to produce arrays of full paths compatible with dockutil.
 
+Application names are passed through find as #####*Google Chrome*
+
 The script is written to take the least amount of time. Most applications are found within 2 directory levels of /Applications, so most app names are passed through with find -maxdepth 2. Some applications will need different -maxdepths set or sometimes completely different paths. To speed things up I use an if statement to filter out the other apps from being searched at higher -maxdepth or from a folder further up the hierarchy than necessary.
 
 For my purposes most of the name arrays filter into a single 'apppaths' array, however you could keep them separate by naming the output arrays differently. The reason you would do this is mentioned in the next section.
