@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#### REQUIRES /usr/local/dockutil (https://github.com/kcrawford/dockutil) ####
+#### REQUIRES dockutil (https://github.com/kcrawford/dockutil) ####
+
+dockutil=/usr/local/dockutil
 
  ###################################################################
  ##     Enter the names of the apps you want in the dock          ##
@@ -117,23 +119,23 @@ then
 ## configures tsladmin dock
 
 for removal in "${appleremove[@]}"; do
-/usr/local/dockutil --remove ${removal} --no-restart
+$dockutil --remove ${removal} --no-restart
 done
 
 for adminremoval in "${adminremove[@]}"; do
-/usr/local/dockutil --remove ${adminremoval} --no-restart
+$dockutil --remove ${adminremoval} --no-restart
 done
 
 for browser in "${browserpaths[@]}"; do
-/usr/local/dockutil --add ${browser} --after Safari --no-restart
+$dockutil --add ${browser} --after Safari --no-restart
 done
 
 for adminapp in "${adminpaths[@]}"; do
 if [[ "$adminapp" == *"Managed Software Center"* ]]
 then
-/usr/local/dockutil --add ${adminapp} --position beginning --no-restart
+$dockutil --add ${adminapp} --position beginning --no-restart
 else
-/usr/local/dockutil --add ${adminapp} --position end --no-restart
+$dockutil --add ${adminapp} --position end --no-restart
 fi
 done
 
@@ -144,19 +146,19 @@ else
 ## configures user dock
 
 for removal in "${appleremove[@]}"; do
-/usr/local/dockutil --remove ${removal} --no-restart
+$dockutil --remove ${removal} --no-restart
 done
 
 for browser in "${browserpaths[@]}"; do
-/usr/local/dockutil --add ${browser} --after Safari --no-restart
+$dockutil --add ${browser} --after Safari --no-restart
 done
 
 for app in "${apppaths[@]}"; do
 if [[ "$app" == *"Managed Software Center"* ]]
 then
-/usr/local/dockutil --add ${app} --position beginning --no-restart
+$dockutil --add ${app} --position beginning --no-restart
 else
-/usr/local/dockutil --add ${app} --position end --no-restart
+$dockutil --add ${app} --position end --no-restart
 fi
 done
 
