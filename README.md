@@ -13,10 +13,10 @@ Written as a run-once - leaves .userconfig in the users home to prevent the scri
 
 The dock-arranger script is made up of three main sections:
 
-#### 1. App Name Arrays
+#### 1. App name arrays
 The first section is made up of arrays which you can use to input names of apps located in /Applications that you would like added to the dock.
 
-#### 2. Application Searching
+#### 2. Application searching
 The second section is made up of find commands in for loops that iterate through the arrays of names to produce arrays of full paths compatible with dockutil.
 I have appended most name arrays into a single 'apppaths' array, however you could keep them separate by naming the output arrays differently. The reason you would do this is mentioned in the next section. There is also an example of picking individual elements from the arrays using conditions.
 
