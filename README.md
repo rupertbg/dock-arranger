@@ -1,7 +1,7 @@
 # dock-arranger.sh
-### A bash script to find apps and edit placement in the osx dock (at login if paired with a LaunchAgent). 
+### A bash script to find apps and edit placement in the osx dock 
 
-Written as a run-once. Leaves .userconfig in the users home to prevent the script running again if called by a LaunchAgent at login.
+Written as a run-once - leaves .userconfig in the users home to prevent the script running again. Designed for use with a LaunchAgent to run at login.
 
 ### Requirements
 
