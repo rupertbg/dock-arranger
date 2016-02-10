@@ -26,4 +26,8 @@ The script is written to take the least amount of time. Most applications are fo
 For my purposes most of the name arrays filter into a single 'apppaths' array, however you could keep them separate by naming the output arrays differently. The reason you would do this is mentioned in the next section.
 
 #### 3. Configuration using dockutil 
-The third section is made up of dockutil commands in for loops that iterate through the path arrays and add/remove apps in the dock based on the options provided by dockutil. If you have separately named path arrays coming in then you have the ability to make each array end up in a different place in the dock etc. I have also included examples of individually selecting an item in the array using conditions.
+The third section is made up of dockutil commands in for loops that iterate through the path arrays and add/remove apps in the dock based on the options provided by dockutil. 
+
+Since I wrote this script for an enterprise environment, the first thing it does is checks to see if you are logged in as a certain admin account, as the techs need different applications in the dock than the user(s) of the machine.
+
+If you have separately named path arrays coming in then you have the ability to make each array end up in a different place in the dock etc. I have also included examples of individually selecting an item in the array using conditions, since I like having Munki at the start of the dock ;).
