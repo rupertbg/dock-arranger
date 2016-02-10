@@ -7,7 +7,7 @@ Written as a run-once. Leaves .userconfig in the users home to prevent the scrip
 
 - dockutil (https://github.com/kcrawford/dockutil) must be located in /usr/local/ or variable in script edited to suit
 
-- OS X 10.11.x (Probably works on older version but haven't tested)
+- OS X 10.11.x (Probably works on older versions but haven't tested)
 
 ### Options
 
