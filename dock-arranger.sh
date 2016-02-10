@@ -3,7 +3,7 @@
 #### REQUIRES /usr/local/dockutil (https://github.com/kcrawford/dockutil) ####
 
  ###################################################################
- ##		   Enter the names of the apps you want in the dock       ##
+ ##     Enter the names of the apps you want in the dock          ##
  ###################################################################
 
  ## Apps are searched using these arrays as strings with wildcard ##
