@@ -5,7 +5,7 @@
 dockutil=/usr/local/dockutil
 
  ###################################################################
- ##     Enter the names of the apps you want in the dock          ##
+ ##                           App Names                           ##
  ###################################################################
 
  ## Apps are searched using these arrays as strings with wildcard ##
