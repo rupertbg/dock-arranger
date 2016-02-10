@@ -1,4 +1,7 @@
 # dock-arranger
-A bash script to easily define dock apps. Goes great with a side of LaunchAgent
+## A bash script to easily define osx dock apps. 
 
-#### REQUIRES /usr/local/dockutil (https://github.com/kcrawford/dockutil) ####
+Written as a run-once. Leaves .userconfig in the users home to prevent the script running again if called by a LaunchAgent at login.
+
+
+## REQUIRES /usr/local/dockutil (https://github.com/kcrawford/dockutil)
