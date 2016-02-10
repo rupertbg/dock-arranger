@@ -116,7 +116,7 @@ do
 if [ $HOME = "/Users/ADMINACCOUNT" ]
 then
 
-## configures tsladmin dock
+## configures an admin account dock (for enterprise use)
 
 for removal in "${appleremove[@]}"; do
 $dockutil --remove ${removal} --no-restart
@@ -143,7 +143,7 @@ defaults write com.apple.dock persistent-others -array-add '{"tile-data" = {"lis
 
 else
 
-## configures user dock
+## configures non-admin user account dock
 
 for removal in "${appleremove[@]}"; do
 $dockutil --remove ${removal} --no-restart
